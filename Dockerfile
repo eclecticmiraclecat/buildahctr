@@ -1,1 +1,5 @@
 FROM alpine
+
+RUN mkdir -p /bubu
+
+ENV _BUILDAH_STARTED_IN_USERNS="" BUILDAH_ISOLATION=chroot
